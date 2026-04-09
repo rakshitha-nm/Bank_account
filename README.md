@@ -258,6 +258,15 @@ pipeline {
     }
 }
 
+
+Dockerfile
+
+FROM tomcat:9.0
+
+COPY target/sample-webapp.war /usr/local/tomcat/webapps/
+
+EXPOSE 8080
+
 Step 4: Run the Pipeline
 •	Click Build Now 
 •	Monitor in Console Output 
